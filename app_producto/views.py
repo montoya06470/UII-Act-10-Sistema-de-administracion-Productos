@@ -34,4 +34,4 @@ def delete_producto(request, id_producto):
     if request.method == 'POST':
         producto.delete()
         return redirect('index')
-    return render(request, 'app_producto/delete.html', {'producto': producto})
+    return redirect('index')
